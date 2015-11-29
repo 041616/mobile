@@ -1,0 +1,9 @@
+button-theme(color1, color2)
+	background linear-gradient(to right, color1 0%, color2 45%, color2 55%, color1 100%)
+	&:after
+		background linear-gradient(to bottom, color1 0%, rgba(red(color1), green(color1), blue(color1), 0) 100%)
+
+@import "button"
+@import "button_type_one"
+@import "button_type_two"
+@import "button_type_three"
