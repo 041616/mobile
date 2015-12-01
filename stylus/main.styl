@@ -1,20 +1,24 @@
-$button1-dark-color ?= #205d2c
-$button1-light-color ?= #26a441
+set-value(value, default)
+	value is defined ? convert(value) : default
 
-$button2-dark-color ?= #c53427
-$button2-light-color = #ef7f42
+$button1-color = set-value($button1-color, #fff)
+$button1-dark-color = set-value($button1-dark-color, #205d2c)
+$button1-light-color = set-value($button1-light-color, #26a441)
 
-$button3-dark-color ?= #305687
-$button3-light-color ?= #028bcf
+$button2-color = set-value($button2-color, #fff)
+$button2-dark-color = set-value($button2-dark-color, #c53427)
+$button2-light-color = set-value($button2-light-color, #ef7f42)
 
-$button-color ?= #fff
+$button3-color = set-value($button3-color, #fff)
+$button3-dark-color = set-value($button3-dark-color, #305687)
+$button3-light-color = set-value($button3-light-color, #028bcf)
 
-$color ?= #333
-$link-color ?= #333
+$color = set-value($color, #333)
+$link-color = set-value($link-color, #333)
 
-$font-size ?= 1em
-$line-height ?= 1.2em
-$font-family ?= "Arial, Helvetica, sans-serif"
+$font-size = set-value($font-size, 1em)
+$line-height = set-value($line-height, 1.2em)
+$font-family = set-value($font-family, "Arial, Helvetica, sans-serif")
 
 @import "reset"
 @import "blocks/button"

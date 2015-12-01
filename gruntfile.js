@@ -11,56 +11,30 @@ module.exports = function(grunt) {
       },
       stylus: {
         files: "stylus/**/*.styl",
-        tasks: "stylus",
+        tasks: "stylus"
       },
     }
   };
 
-  grunt.file.recurse("themes/", function(abspath, rootdir, subdir, filename){
-    if (grunt.file.isFile(abspath)){
-      settings = grunt.file.readJSON(abspath);
-      grunt.log.writeln(abspath);
-      grunt.log.writeln(rootdir);
-      grunt.log.writeln(subdir);
-      grunt.log.writeln(filename);
+  var themesFiles = grunt.file.expand("themes/*.json");
+
+  for (var i = 0; i < themesFiles.length; i++) {
+    var file = themesFiles[i];
+    if (grunt.file.isFile(file)) {
+      var theFile = file.match(/\/([^/]*)$/)[1];
+      var onlyName = theFile.substr(0, theFile.lastIndexOf('.')) || theFile;
+      configObject.stylus[onlyName] = {
+        options: {
+          compress: true,
+          define: grunt.file.readJSON(file)
+        },
+        files: {}
+      };
+      configObject.stylus[onlyName].files["css/"+onlyName+".css"] = ["stylus/main.styl"];
     }
-  });
-
-  //for (var prop in config.themes) {
-  //  configObject.stylus[themeFilename] = {
-  //    options: {
-  //      compress: true,
-  //      define: ""
-  //    },
-  //    files: [{
-  //        expand: true,
-  //        cwd: "stylus/",
-  //        src: "main.styl",
-  //        dest: "css",
-  //        ext: ".css"
-  //    }]
-  //  };
-  //  grunt.log.writeln(prop+": "+config.themes[prop]);
-  //}
-
+  }
 
   grunt.config.init(configObject);
-  //grunt.initConfig({
-  //  stylus: {
-  //    compile: {
-  //      options: {
-  //        compress: true
-  //      },
-  //      files: [{
-  //          expand: true,
-  //          cwd: "stylus/themes/",
-  //          src: "*.styl",
-  //          dest: "css",
-  //          ext: ".css"
-  //      }]
-  //    }
-  //  }
-  //});
 
   grunt.loadNpmTasks("grunt-contrib-stylus");
   grunt.loadNpmTasks("grunt-contrib-watch");
