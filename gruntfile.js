@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         dateFormat: function(time) {
           grunt.log.writeln("The watch finished in " + time + "ms.");
           grunt.log.writeln("Waiting...");
-        },
+        }
       },
       stylus: {
         files: "stylus/**/*.styl",
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
       configObject.stylus[onlyName] = {
         options: {
           compress: true,
-          define: grunt.file.readJSON(file)
+          define: {"$config": "../"+file}
         },
         files: {}
       };

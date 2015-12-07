@@ -4,16 +4,110 @@
 	<meta charset="utf-8"/>
 	<title>The HTML5 Herald</title>
 	<link rel="stylesheet" href="../css/green.css"/>
+	<style>
+		.wrapper{
+			padding: 5px;
+		}
+		.wrapper__panel{
+			position: fixed;
+			left: 0;
+			right: 0;
+			padding: 5px;
+			background-color: #fff;
+		}
+		.wrapper__panel_position_top{
+			top: 0;
+		}
+		.wrapper__panel_position_bottom{
+			bottom: 0;
+		}
+		.wrapper__panel_state_static{
+			position: static;
+			visibility: hidden;
+		}
+
+		.slogan{
+			position: relative;
+			overflow: hidden;
+			display: block;
+			padding: 8px 12px 0;
+		}
+		.slogan:before{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 8px;
+			width: 25px;
+			background-color: #287DB1;
+			background-image: url();
+			background-size: contain;
+			background-repeat: no-repeat;
+			content: "";
+		}
+		.slogan:after{
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 8px;
+			width: 25px;
+			background-color: #287DB1;
+			content: "";
+		}
+		.slogan__caption{
+			z-index: 1;
+			position: relative;
+			display: block;
+			padding: 10px;
+			border: 1px solid #fff;
+			background-color: #287DB1;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-	<button class="button button_type_one">
+	<div class="wrapper">
+		<div class="wrapper__panel wrapper__panel_position_top">
+			<a class="button button_theme_one" href="#">
+				<span class="button__caption">Click for free Wi-Fi access now</span>
+			</a>
+		</div>
+		<div class="wrapper__panel wrapper__panel_position_top wrapper__panel_state_static">
+			<span class="button button_theme_one">
+				<span class="button__caption">Click for free Wi-Fi access now</span>
+			</span>
+		</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="wrapper__panel wrapper__panel_position_bottom wrapper__panel_state_static">
+			<strong class="slogan">
+				<span class="slogan__caption">Because We Like You!</span>
+			</strong>
+		</div>
+		<div class="wrapper__panel wrapper__panel_position_bottom">
+			<strong class="slogan">
+				<span class="slogan__caption">Because We Like You!</span>
+			</strong>
+		</div>
+	</div>
+<!-- 	<button class="button button_theme_one">
 		<span class="button__caption">button one</span>
 	</button>
-	<button class="button button_type_two">
+	<button class="button button_theme_two">
 		<span class="button__caption">button two</span>
 	</button>
-	<button class="button button_type_three">
+	<button class="button button_theme_three">
 		<span class="button__caption">button three</span>
 	</button>
-</body>
+ --></body>
 </html>
