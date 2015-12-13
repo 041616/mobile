@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       var onlyName = theFile.substr(0, theFile.lastIndexOf('.')) || theFile;
       configObject.stylus[onlyName] = {
         options: {
-          compress: true,
+          compress: false,
           define: {"$config": "../"+file}
         },
         files: {}

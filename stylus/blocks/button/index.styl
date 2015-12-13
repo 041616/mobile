@@ -1,7 +1,10 @@
-button-theme(color1, color2)
-	background linear-gradient(to right, color1 0%, color2 45%, color2 55%, color1 100%)
+button-theme(fz, clr1, clr2)
+	font-size fz
+	@media $retina
+		font-size fz * 2
+	background linear-gradient(to right, clr1 0%, clr2 45%, clr2 55%, clr1 100%)
 	&:after
-		background linear-gradient(to bottom, color1 0%, rgba(color1, 0) 100%)
+		background linear-gradient(to bottom, clr1 0%, rgba(clr1, 0) 100%)
 
 @import "button"
 @import "button_theme_one"
