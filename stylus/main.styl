@@ -3,30 +3,32 @@ json($config) if $config is defined
 $button1-color = button1-color is defined ? button1-color : #fff
 $button1-dark-color = button1-dark-color is defined ? button1-dark-color : #205d2c
 $button1-light-color = button1-light-color is defined ? button1-light-color : #26a441
-$button1-font-size = button1-font-size is defined ? button1-font-size : 1em
+$button1-font-size = button1-font-size is defined ? button1-font-size : 16px
 
 $button2-color = button2-color is defined ? button2-color : #fff
 $button2-dark-color = button2-dark-color is defined ? button2-dark-color : #c53427
 $button2-light-color = button2-light-color is defined ? button2-light-color : #ef7f42
-$button2-font-size = button2-font-size is defined ? button2-font-size : 1em
+$button2-font-size = button2-font-size is defined ? button2-font-size : 16px
 
 $button3-color = button3-color is defined ? button3-color : #fff
 $button3-dark-color = button3-dark-color is defined ? button3-dark-color : #305687
 $button3-light-color = button3-light-color is defined ? button3-light-color : #028bcf
-$button3-font-size = button3-font-size is defined ? button3-font-size : 1em
+$button3-font-size = button3-font-size is defined ? button3-font-size : 16px
 
 $background-color = background-color is defined ? background-color : #fff
 $color = color is defined ? color : #333
 $link-color = link-color is defined ? link-color : #333
 
-$font-size = font-size is defined ? font-size : 1em
-$line-height = line-height is defined ? line-height : 1.2em
+$font-size = font-size is defined ? font-size : 16px
+$line-height = line-height is defined ? line-height : 113%
 $font-family = font-family is defined ? font-family : "Arial, Helvetica, sans-serif"
 
 $slogan-background-color = slogan-background-color is defined ? slogan-background-color : #287DB1
 $slogan-color = $slogan-color is defined ? $slogan-color : #fff
 
 @import "media"
-@import "reset"
 @import "svg"
+@import "reset"
 @import "blocks/main"
+
+apply_media_cache()

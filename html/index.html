@@ -2,124 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The HTML5 Herald</title>
 	<link rel="stylesheet" href="../css/green.css"/>
-	<style>
-		.wrapper{
-			padding: 1%;
-		}
-		.wrapper__panel{
-			position: fixed;
-			left: 0;
-			right: 0;
-			padding: 1%;
-			background-color: #fff;
-		}
-		.wrapper__panel_position_top{
-			top: 0;
-		}
-		.wrapper__panel_position_bottom{
-			bottom: 0;
-		}
-		.wrapper__panel_state_static{
-			position: static;
-			visibility: hidden;
-		}
-		.wrapper__panel_state_static.wrapper__panel_position_bottom{
-			padding: 1% 0 0;
-		}
-		.wrapper__panel_state_static.wrapper__panel_position_top{
-			padding: 0 0 1%;
-		}
-	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../js/swiper.jquery.min.js"></script>
+	<script src="../js/jquery.main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="wrapper__panel wrapper__panel_position_top">
+		<div id="top-panel" class="wrapper__panel wrapper__panel_position_top">
 			<a class="button button_theme_one" href="#">
 				<span class="button__caption">Click for free Wi-Fi access now</span>
 			</a>
+			<!--<h1 class="heading">Spring Break Essentials</h1>-->
+			<h1 class="header">Our Offers</h1>
 		</div>
-		<div class="wrapper__panel wrapper__panel_position_top wrapper__panel_state_static">
-			<span class="button button_theme_one">
-				<span class="button__caption">Click for free Wi-Fi access now</span>
-			</span>
+		<div id="swiper" class="swiper">
+			<ul class="swiper__list">
+				<li class="swiper__item">
+					<strong>Slide 1</strong>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium at consectetur eius excepturi magni nam sint soluta? Ab delectus dignissimos fugiat illum, impedit in ipsum non nostrum quam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis dolor exercitationem harum minima natus non possimus tempora totam veniam? Assumenda cumque expedita modi nemo nobis non nostrum quo tenetur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cumque eum iure perferendis porro provident vitae. Alias at consequuntur dolores, dolorum earum nostrum odio porro, quod ratione repudiandae sint tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid, debitis doloribus earum, eius excepturi explicabo illo inventore iusto minus molestias necessitatibus nihil numquam provident, quod unde veniam voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, consequatur, cumque deleniti eum id in labore minus nisi odio odit officia, velit veniam voluptatum! Est facilis molestias unde. Blanditiis, enim.</p>
+				</li>
+				<li class="swiper__item">
+					<strong>Slide 2</strong>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, beatae cum dicta, ducimus esse, incidunt laborum nisi officia omnis perspiciatis quia quidem ratione reiciendis voluptas. Culpa inventore iste voluptas?</p>
+				</li>
+				<li class="swiper__item">
+					<strong>Slide 3</strong>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aliquid debitis deleniti earum eos expedita hic illum, in, ipsam minima mollitia nesciunt odio quaerat qui quos tempora vel.</p>
+				</li>
+			</ul>
+			<button class="swiper__btn swiper__btn_direction_left" title="previous"></button>
+			<button class="swiper__btn swiper__btn_direction_right" title="next"></button>
 		</div>
-		<div>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-		<div class="wrapper__panel wrapper__panel_position_bottom wrapper__panel_state_static">
-			<strong class="slogan">
-				<span class="slogan__caption">Because We Like You!</span>
-			</strong>
-		</div>
-		<div class="wrapper__panel wrapper__panel_position_bottom">
+		<div id="bottom-panel" class="wrapper__panel wrapper__panel_position_bottom">
 			<strong class="slogan">
 				<span class="slogan__caption">Because We Like You!</span>
 			</strong>
