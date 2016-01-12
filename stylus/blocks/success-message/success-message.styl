@@ -1,0 +1,17 @@
+.success-message
+    position relative
+    width: 300px
+    padding 0 0 0 75px
+    margin 20px auto
+    box-sizing border-box
+
+    &:before
+        position: absolute
+        top 50%
+        left 10px
+        width 50px
+        height 50px
+        margin -25px 0 0
+        background url(unquote(svg-success($success-message-icon-color))) no-repeat 50% 50%
+        background-size contain
+        content ""

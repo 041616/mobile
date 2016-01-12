@@ -1,13 +1,6 @@
 .button_icon_right-arrow
+    @extend $button-icon-styles
 
-    .button__caption
-        padding 0 30px
-
-        &:after
-            position absolute
-            right 0
-            top 50%
-            width 26px
-            height 26px
-            margin -13px 0 0 0
-            content ""
+    .button__caption:after
+        left auto
+        right 0

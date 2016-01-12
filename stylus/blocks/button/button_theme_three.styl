@@ -1,13 +1,33 @@
 .button_theme_three
-	color $button3-color
-	button-theme($button3-font-size, $button3-dark-color, $button3-light-color)
+    color $button3-color
+    button-theme($button3-font-size, $button3-dark-color, $button3-light-color)
 
-	&.button_icon_right-arrow
-		.button__caption:after
-			background url(unquote(svg-right-arrow($button3-color))) no-repeat 50% 50%
-			background-size contain
+    &.button_icon_right-arrow
+        .button__caption:after
+            background url(unquote(svg-right-arrow($button3-color))) no-repeat 50% 50%
+            background-size contain
 
-	&.button_icon_left-arrow
-		.button__caption:after
-			background url(unquote(svg-left-arrow($button3-color))) no-repeat 50% 50%
-			background-size contain
+    &.button_icon_left-arrow
+        .button__caption:after
+            background url(unquote(svg-left-arrow($button3-color))) no-repeat 50% 50%
+            background-size contain
+
+    &.button_icon_facebook
+        .button__caption:after
+            background url(unquote(svg-facebook($button3-color))) no-repeat 50% 50%
+            background-size contain
+
+    &.button_icon_vkontakte
+        .button__caption:after
+            background url(unquote(svg-vkontakte($button3-color))) no-repeat 50% 50%
+            background-size contain
+
+    &.button_icon_google-plus
+        .button__caption:after
+            background url(unquote(svg-google-plus($button3-color))) no-repeat 50% 50%
+            background-size contain
+
+    &.button_icon_email
+        .button__caption:after
+            background url(unquote(svg-email($button3-color))) no-repeat 50% 50%
+            background-size contain

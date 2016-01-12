@@ -1,0 +1,26 @@
+.info-message
+    position absolute
+    display: none
+    margin 11px 0 0
+    padding 10px 10px 10px 34px
+    border-radius 5px
+    background-color $info-message-background-color
+    border 1px solid $info-message-border-color
+    color $info-message-color
+    font-size $font-size * 0.95
+
+    &:before,
+    &:after
+        position absolute
+        left 4px
+        bottom 100%
+        border-width 0 7px 12px
+        border-style solid
+        content ""
+
+    &:before
+        border-color transparent transparent $info-message-border-color
+
+    &:after
+        margin-bottom -2px
+        border-color transparent transparent $info-message-background-color
