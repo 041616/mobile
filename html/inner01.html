@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wi-Fi</title>
+	<link rel="stylesheet" href="../css/green.css"/>
+</head>
+<body>
+	<form class="wrapper" action="#">
+		<i class="wifi-icon"></i>
+		<div class="captcha">
+			<img class="captcha__image" src="https://openclipart.org/image/2400px/svg_to_png/98713/Captcha-003.png" alt=""/>
+		</div>
+		<label class="text-row">
+			Confirm you are not a bot.<br/>Please enter captcha code to continue:
+			<input class="text-row__input" type="text"/>
+		</label>
+		<p class="error-message error-message_state_active">Wrong code. Please try again.</p>
+		<div class="row">
+			<div class="row__column">
+				<button class="button button_size_full button_theme_two button_icon_left-arrow">
+					<span class="button__caption">Back</span>
+				</button>
+			</div>
+			<div class="row__column">
+				<button class="button button_size_full button_theme_three button_icon_right-arrow">
+					<span class="button__caption">Next</span>
+				</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
