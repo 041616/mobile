@@ -1,0 +1,30 @@
+.like-counter
+    position relative
+    display block
+    padding 12px
+    border 3px solid $like-counter-border-color
+    border-radius 5px
+    background-color $like-counter-background-color
+    color $like-counter-color
+    font-size $like-counter-font-size
+    font-weight bold
+    text-align center
+
+    &:before,
+    &:after
+        position absolute
+        top 50%
+        right 100%
+        width 0
+        height 0
+        margin-top -8px
+        border-width 8px 10px 8px 0
+        border-style solid
+        content ""
+
+    &:before
+        border-color transparent $like-counter-border-color transparent transparent
+
+    &:after
+        margin-right -5px
+        border-color transparent $like-counter-background-color transparent transparent

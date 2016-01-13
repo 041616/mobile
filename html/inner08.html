@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi</title>
+    <link rel="stylesheet" href="../css/green.css"/>
+    <style>
+        .like-counter{
+            position: relative;
+            display: block;
+            padding: 12px;
+            border: 3px solid #666;
+            border-radius: 5px;
+            background-color: #ececec;
+            color: #5b5b5b;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .like-counter:before, .like-counter:after{
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            width: 0;
+            height: 0;
+            margin-top: -8px;
+            border-width: 8px 10px 8px 0;
+            border-style: solid;
+            content: "";
+        }
+        .like-counter:before{
+            border-color: transparent #666 transparent transparent;
+        }
+        .like-counter:after{
+            margin-right: -5px;
+            border-color: transparent #ececec transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <i class="wifi-icon"></i>
+        <div class="row">
+            <div class="row__column">
+                <div class="profile-image">
+                    <img class="profile-image__picture" src="http://netolkoeda.com/wp-content/uploads/2014/05/appp.jpg" alt=""/>
+                </div>
+            </div>
+            <p class="row__column">Hello Rich,<br/> Will you help promote Social Spot Wi-Fi by posting like button of your social network?</p>
+        </div>
+        <div class="row">
+            <div class="row__column">
+                <a class="button button_theme_three" href="#">
+                    <span class="button__caption">Like</span>
+                </a>
+            </div>
+            <div class="row__column">
+                <span class="like-counter">524288</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row__column">
+                <a class="button button_theme_two" href="#">
+                    <span class="button__caption">Like</span>
+                </a>
+            </div>
+            <div class="row__column">
+                <span class="like-counter">131072</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row__column">
+                <a class="button button_theme_three" href="#">
+                    <span class="button__caption">Like</span>
+                </a>
+            </div>
+            <div class="row__column">
+                <span class="like-counter">262144</span>
+            </div>
+        </div>
+        <a class="button button_theme_one button_icon_right-arrow" href="#">
+            <span class="button__caption">Let me in</span>
+        </a>
+    </div>
+</body>
+</html>
