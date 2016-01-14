@@ -5,5 +5,4 @@
     display none
 
     &:checked + .checkbox-label .checkbox-label__icon:before
-        background url(unquote(svg-check($color))) no-repeat 50% 50%
-        background-size contain
+        @extend $icon-check

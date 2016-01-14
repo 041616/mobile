@@ -7,12 +7,12 @@
     font-size $font-size * 0.81
 
     &:before
+        @extend $icon-wifi-antenna
         position absolute
         left 10px
         top 50%
         width 38px
         height 38px
-        margin: -19px 0 0
-        background url(unquote(svg-wifi-antenna($wifi-panel-icon-color))) no-repeat 50% 50%
-        background-size contain
-        content ""
+        margin -19px 0 0
+        color $wifi-panel-icon-color
+        font-size: 38px
