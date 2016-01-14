@@ -13,6 +13,52 @@ module.exports = function(grunt) {
         files: "stylus/**/*.styl",
         tasks: "stylus"
       },
+    },
+    htmlmin: {
+      compress: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+          collapseInlineTagWhitespace: true,
+          removeRedundantAttributes: true,
+          removeEmptyAttributes: true,
+          keepClosingSlash: true,
+          minifyJS: true,
+          minifyCSS: true,
+          conservativeCollapse: true
+        },
+        files: [{
+          expand: true,
+          cwd: "html",
+          src: "**/*.html",
+          dest: "build",
+          ext: ".html"
+        }]
+      }
+    },
+    uglify: {
+      compress: {
+        options: {
+          compress: true
+        },
+        files: [{
+            expand: true,
+            cwd: 'js',
+            src: '**/*.js',
+            dest: 'build/js'
+        }]
+      },
+      beautify: {
+        options: {
+          beautify: true
+        },
+        files: [{
+            expand: true,
+            cwd: 'js',
+            src: '**/*.js',
+            dest: 'build/js'
+        }]
+      }
     }
   };
 
@@ -30,14 +76,17 @@ module.exports = function(grunt) {
         },
         files: {}
       };
-      configObject.stylus[onlyName].files["css/"+onlyName+".css"] = ["stylus/main.styl"];
+      configObject.stylus[onlyName].files["build/css/"+onlyName+".css"] = ["stylus/main.styl"];
     }
   }
 
   grunt.config.init(configObject);
 
   grunt.loadNpmTasks("grunt-contrib-stylus");
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks("grunt-contrib-watch");
 
-  grunt.registerTask("default", ["stylus"]);
+  grunt.registerTask("default", ["stylus", "htmlmin", "uglify:beautify"]);
+  grunt.registerTask("build", ["stylus", "htmlmin", "uglify:compress"]);
 };
