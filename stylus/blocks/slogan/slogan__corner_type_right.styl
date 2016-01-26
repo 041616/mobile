@@ -1,0 +1,23 @@
+.slogan__corner_type_right
+    right 0
+    border-color $slogan-border-color transparent $slogan-border-color $slogan-border-color
+
+    &:before
+        top 0
+        left 0
+        border-color $slogan-border-color transparent transparent $slogan-border-color
+    &:after
+        bottom 0
+        left 0
+        border-color transparent transparent $slogan-border-color $slogan-border-color
+
+    .slogan__inner-corner
+
+        &:before
+            top 0
+            left -1px
+            border-color $slogan-background-color transparent transparent $slogan-background-color
+        &:after
+            bottom 0
+            left -1px
+            border-color transparent transparent $slogan-background-color $slogan-background-color

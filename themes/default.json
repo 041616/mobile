@@ -1,0 +1,68 @@
+{
+    "max-width": "600px",
+    "indent": "5px",
+
+    "background-color": "#fff",
+    "color": "#333",
+    "link-color": "#333",
+
+    "font-size": "16px",
+    "line-height": "118%",
+    "font-family": "Arial, Helvetica, sans-serif",
+
+    "button1-color": "#fff",
+    "button1-dark-color": "#205d2c",
+    "button1-light-color": "#26a441",
+    "button1-font-size": "16px",
+
+    "button2-color": "#fff",
+    "button2-dark-color": "#c53427",
+    "button2-light-color": "#ef7f42",
+    "button2-font-size": "16px",
+
+    "button3-color": "#fff",
+    "button3-dark-color": "#305687",
+    "button3-light-color": "#028bcf",
+    "button3-font-size": "16px",
+
+    "button4-color": "#fff",
+    "button4-dark-color": "#0a8dc2",
+    "button4-light-color": "#6fc4e8",
+    "button4-font-size": "16px",
+
+    "header-color": "#44568d",
+    "heading-color": "#fff",
+    "heading-background-color": "#898989",
+
+    "swiper-border-color": "#c6c6c6",
+
+    "slogan-background-color": "#287DB1",
+    "slogan-color": "#fff",
+    "slogan-border-color": "#fff",
+
+    "error-message-color": "#CC1000",
+
+    "captcha-background-color": "#dadada",
+
+    "info-message-background-color": "#f3f1da",
+    "info-message-border-color": "#898989",
+    "info-message-color": "#2a2a2a",
+
+    "panel-background-color": "#dadada",
+    "panel-color": "#2a2a2a",
+
+    "like-counter-border-color": "#666",
+    "like-counter-background-color": "#ececec",
+    "like-counter-color": "#5b5b5b",
+    "like-counter-font-size": "16px",
+
+    "wifi-icon-color": "#5b5b5b",
+
+    "success-message-icon-color": "#007639",
+
+    "input-border-color": "#333",
+    "input-color": "#333",
+    "input-background-color": "#fff",
+
+    "profile-image-border-color": "#333"
+}

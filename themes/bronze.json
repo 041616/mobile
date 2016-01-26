@@ -1,0 +1,33 @@
+{
+    "background-color": "#A67C00",
+    "color": "#2A2A2A",
+    "link-color": "#2A2A2A",
+
+    "header-color": "#5B5B5B",
+    "heading-background-color": "#E8C288",
+    "heading-color": "#2A2A2A",
+
+    "swiper-border-color": "#CC853F",
+
+    "slogan-background-color": "#E8C288",
+    "slogan-color": "#2A2A2A",
+
+    "error-message-color": "#FFED00",
+
+    "captcha-background-color": "#E8C288",
+
+    "panel-background-color": "#E8C288",
+    "panel-color": "#2A2A2A",
+
+    "like-counter-background-color": "#f3f1da",
+
+    "wifi-icon-color": "#333",
+
+    "success-message-icon-color": "#007639",
+
+    "input-border-color": "#2A2A2A",
+    "input-color": "#2A2A2A",
+    "input-background-color": "#F3F1DA",
+
+    "profile-image-border-color": "#2A2A2A"
+}
