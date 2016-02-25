@@ -83,8 +83,8 @@ module.exports = function(grunt) {
   grunt.config.init(configObject);
 
   grunt.loadNpmTasks("grunt-contrib-stylus");
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks("grunt-contrib-htmlmin");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-watch");
 
   grunt.registerTask("default", ["stylus", "htmlmin", "uglify:beautify"]);
