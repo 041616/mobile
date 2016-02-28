@@ -1,0 +1,27 @@
+{
+    "background-color": "#FFED00",
+    "color": "#2A2A2A",
+    "link-color": "#2A2A2A",
+
+    "header-color": "#E31E24",
+    "heading-color": "#fff",
+    "heading-background-color": "#EF7F1A",
+
+    "slogan-background-color": "#EF7F1A",
+
+    "error-message-color": "#E31E24",
+
+    "captcha-background-color": "#FBF7C6",
+
+    "info-message-background-color": "#FBF7C6",
+
+    "panel-background-color": "#FBF7C6",
+
+    "like-counter-background-color": "#F3F1DA",
+
+    "input-border-color": "#2A2A2A",
+    "input-color": "#2A2A2A",
+    "input-background-color": "#fff",
+
+    "profile-image-border-color": "#2A2A2A"
+}

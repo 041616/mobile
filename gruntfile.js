@@ -76,7 +76,8 @@ module.exports = function(grunt) {
         },
         files: {}
       };
-      configObject.stylus[onlyName].files["build/css/"+onlyName+".css"] = ["stylus/main.styl"];
+      configObject.stylus[onlyName].files["build/css/styles.css"] = ["stylus/main.styl"];
+      grunt.registerTask(onlyName, ["stylus:"+onlyName, "htmlmin", "uglify:compress"]);
     }
   }
 
@@ -87,6 +88,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-watch");
 
-  grunt.registerTask("default", ["stylus", "htmlmin", "uglify:beautify"]);
-  grunt.registerTask("build", ["stylus", "htmlmin", "uglify:compress"]);
+  // grunt.registerTask("default", ["stylus:default", "htmlmin", "uglify:beautify"]);
+  grunt.registerTask("build", ["stylus:default", "htmlmin", "uglify:beautify"]);
 };
